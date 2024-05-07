@@ -7,7 +7,6 @@ import {
   fetchLatestInvoices,
   fetchRevenue,
 } from '@/app/lib/data';
-import { sql } from '@vercel/postgres';
 
 export default async function Page() {
   const revenue = await fetchRevenue();
